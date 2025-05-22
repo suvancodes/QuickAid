@@ -1,10 +1,11 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: black;
+  background: #f8f9fa;
   color: #333;
   text-align: center;
   padding: 20px;
+  transition: background 0.3s, color 0.3s;
 }
 
 header h1 {
@@ -44,4 +45,26 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode Styles */
+body.dark {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+body.dark ul li {
+  background: #1f1f1f;
+  color: #f1f1f1;
+  border-color: #333;
+}
+
+body.dark ul li:hover {
+  background: #333;
+}
+
+body.dark button {
+  background: #f1f1f1;
+  color: #121212;
 }
