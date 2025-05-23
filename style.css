@@ -5,6 +5,14 @@ body {
   color: #f1f1f1;
   text-align: center;
   padding: 20px;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
 }
 
 header h1 {
@@ -27,6 +35,17 @@ ul li {
   border-radius: 10px;
   color: #f1f1f1;
   transition: background 0.3s;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 0.4s ease-out forwards;
+  animation-delay: calc(var(--order) * 0.1s);
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 ul li:hover {
@@ -34,7 +53,13 @@ ul li:hover {
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#guide,
+#emergency-list {
+  transition: opacity 0.4s ease;
 }
 
 button {
@@ -46,4 +71,8 @@ button {
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s, color 0.3s;
+}
+
+button:hover {
+  background: #ccc;
 }
