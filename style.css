@@ -76,3 +76,19 @@ button {
 button:hover {
   background: #ccc;
 }
+.aid {
+  display: inline-block;
+  animation: riseUp 1s ease-in-out infinite alternate;
+}
+
+@keyframes riseUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
