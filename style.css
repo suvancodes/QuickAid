@@ -1,15 +1,14 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f8f9fa;
-  color: #333;
+  background: #121212;
+  color: #f1f1f1;
   text-align: center;
   padding: 20px;
-  transition: background 0.3s, color 0.3s;
 }
 
 header h1 {
-  color: #e63946;
+  color: #ff6b6b;
   font-size: 2.5rem;
 }
 
@@ -19,18 +18,19 @@ ul {
 }
 
 ul li {
-  background: #fff;
+  background: #1f1f1f;
   margin: 10px auto;
   padding: 15px;
   max-width: 300px;
-  border: 1px solid #ccc;
+  border: 1px solid #333;
   cursor: pointer;
   border-radius: 10px;
+  color: #f1f1f1;
   transition: background 0.3s;
 }
 
 ul li:hover {
-  background: #ffe5e5;
+  background: #333;
 }
 
 .hidden {
@@ -40,31 +40,10 @@ ul li:hover {
 button {
   margin-top: 20px;
   padding: 10px 20px;
-  background: #e63946;
-  color: white;
+  background: #f1f1f1;
+  color: #121212;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s, color 0.3s;
-}
-
-/* Dark Mode Styles */
-body.dark {
-  background: #121212;
-  color: #f1f1f1;
-}
-
-body.dark ul li {
-  background: #1f1f1f;
-  color: #f1f1f1;
-  border-color: #333;
-}
-
-body.dark ul li:hover {
-  background: #333;
-}
-
-body.dark button {
-  background: #f1f1f1;
-  color: #121212;
 }
