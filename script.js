@@ -49,11 +49,19 @@ function showGuide(key) {
     stepsList.appendChild(li);
   });
 
-  document.getElementById("emergency-list").classList.add("hidden");
-  document.getElementById("guide").classList.remove("hidden");
+  document.getElementById("emergency-list").style.opacity = 0;
+  setTimeout(() => {
+    document.getElementById("emergency-list").classList.add("hidden");
+    document.getElementById("guide").classList.remove("hidden");
+    document.getElementById("guide").style.opacity = 1;
+  }, 300);
 }
 
 function goBack() {
-  document.getElementById("guide").classList.add("hidden");
-  document.getElementById("emergency-list").classList.remove("hidden");
+  document.getElementById("guide").style.opacity = 0;
+  setTimeout(() => {
+    document.getElementById("guide").classList.add("hidden");
+    document.getElementById("emergency-list").classList.remove("hidden");
+    document.getElementById("emergency-list").style.opacity = 1;
+  }, 300);
 }
