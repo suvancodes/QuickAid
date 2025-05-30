@@ -2,38 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>QuickAid - First Aid Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickAid - Emergency Chatbot</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="dark">
-  <header>
-    <h1>🩺 QuickAid</h1>
-    <p>Your instant first aid helper</p>
-  </header>
+<body>
+  <h1>QuickAid Emergency Assistant</h1>
 
-  <main>
-    <section id="emergency-list">
-      <h2>Select an Emergency:</h2>
-      <ul>
-        <li style="--order: 1" onclick="showGuide('bleeding')">🩸 Bleeding</li>
-        <li style="--order: 2" onclick="showGuide('burns')">🔥 Burns</li>
-        <li style="--order: 3" onclick="showGuide('choking')">😮‍💨 Choking</li>
-        <li style="--order: 4" onclick="showGuide('cpr')">❤️ CPR</li>
-      </ul>
-    </section>
-
-    <section id="guide" class="hidden">
-      <h2 id="guide-title"></h2>
-      <ol id="guide-steps"></ol>
-      <button onclick="goBack()">🔙 Back</button>
-    </section>
-  </main>
-
-  <footer>
-    <p>📞 Emergency Numbers: 112 (General), 101 (Fire), 102 (Ambulance)</p>
-  </footer>
+  <div id="chatbot-container">
+    <div id="chat-log"></div>
+    <div class="input-area">
+      <input type="text" id="user-input" placeholder="Ask QuickAid for help..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
