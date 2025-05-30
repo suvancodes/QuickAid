@@ -1,4 +1,4 @@
-const API_KEY = 'YOUR_GEMINI_API_KEY'; // ⛔ DO NOT use frontend for real deployments
+const API_KEY = 'AIzaSyAjIgpLyBAW9Kw5HwT9PXteTbPDuWjIBBs'; // ⛔ DO NOT use frontend for real deployments
 
 async function sendMessage() {
   const inputField = document.getElementById("user-input");
